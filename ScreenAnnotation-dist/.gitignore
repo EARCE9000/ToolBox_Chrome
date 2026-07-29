@@ -1,0 +1,4 @@
+# 再生成可能なビルド成果物・中間ファイルはコミットしない
+*.zip
+_stage1.png
+demo_screenshot.html
