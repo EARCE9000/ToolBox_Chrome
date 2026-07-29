@@ -1,0 +1,47 @@
+#sa-ext-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 2147483647;
+  pointer-events: none;
+}
+
+#sa-ext-overlay .sa-arrow {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  pointer-events: auto;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#sa-ext-overlay .sa-arrow.sa-dragging {
+  cursor: grabbing;
+}
+
+#sa-ext-overlay .sa-arrow-img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.45));
+}
+
+#sa-ext-overlay .sa-arrow-badge {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #c00000;
+  font: 700 12px/20px "Segoe UI", "Yu Gothic UI", sans-serif;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
